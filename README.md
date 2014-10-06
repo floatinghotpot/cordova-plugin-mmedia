@@ -101,17 +101,17 @@ showInterstitial();
 
 The APIs, Events and Options are detailed documented.
 
-Read the detailed API Reference Documentation [English](https://github.com/floatinghotpot/cordova-mmedia-pro/wiki).
+Read the detailed API Reference Documentation [English](https://github.com/floatinghotpot/cordova-plugin-mmedia/wiki).
 
 ## FAQ ##
 
-If encounter problem when using the plugin, please read the [FAQ](https://github.com/floatinghotpot/cordova-mmedia-pro/wiki/FAQ) first.
+If encounter problem when using the plugin, please read the [FAQ](https://github.com/floatinghotpot/cordova-plugin-mmedia/wiki/FAQ) first.
 
 ## Full Example Code ##
 
 This mMedia Plugin Pro offers the most flexibility and many options.
 
-Check the [test/index.html] (https://github.com/floatinghotpot/cordova-mmedia-pro/blob/master/test/index.html).
+Check the [test/index.html] (https://github.com/floatinghotpot/cordova-plugin-mmedia/blob/master/test/index.html).
 
 ## Screenshots ##
 
@@ -146,7 +146,7 @@ With impressive video Ads, mMedia Plugin Pro is one of the best choice for HTML5
 Cordova/PhoneGap plugins for top Mobile Ad services:
 
 * [AdMob Plugin Pro](https://github.com/floatinghotpot/cordova-admob-pro), enhanced Google AdMob plugin, easy API and more features.
-* [mMedia Plugin Pro](https://github.com/floatinghotpot/cordova-mmedia-pro), enhanced mMedia plugin, support impressive video Ad.
+* [mMedia Plugin Pro](https://github.com/floatinghotpot/cordova-plugin-mmedia), enhanced mMedia plugin, support impressive video Ad.
 * [MobFox Plugin Pro](https://github.com/floatinghotpot/cordova-mobfox-pro), enhanced MobFox plugin, support video Ad and many other Ad network with server-side integration.
 * [iAd Plugin](https://github.com/floatinghotpot/cordova-plugin-iad), Apple iAd service. 
 * [FlurryAds Plugin](https://github.com/floatinghotpot/cordova-plugin-flurry), Yahoo Flurry Ads service.
