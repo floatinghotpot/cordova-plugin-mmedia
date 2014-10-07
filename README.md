@@ -143,7 +143,7 @@ With impressive video Ads, mMedia Plugin Pro is one of the best choice for HTML5
 
 ## See Also ##
 
-Cordova/PhoneGap plugins for top Mobile Ad services:
+Cordova/PhoneGap plugins for the world leading Mobile Ad services:
 
 * [AdMob Plugin Pro](https://github.com/floatinghotpot/cordova-admob-pro), enhanced Google AdMob plugin, easy API and more features.
 * [mMedia Plugin Pro](https://github.com/floatinghotpot/cordova-plugin-mmedia), enhanced mMedia plugin, support impressive video Ad.
