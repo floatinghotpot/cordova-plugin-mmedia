@@ -48,7 +48,7 @@ Step 1: Prepare your mMedia Apid for your app, create it in [mMedia website](htt
 		};
 
 // select the right Ad Id according to platform
-var adId = ( /(android)/i.test(navigator.userAgent) ) ? ad_units.android : ad_units.ios;
+var adid = ( /(android)/i.test(navigator.userAgent) ) ? ad_units.android : ad_units.ios;
 ```
 
 Step 2: Create a banner with single line of javascript
