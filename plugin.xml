@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.rjfun.cordova.mmedia"
-	version="1.0.0">
+	version="1.0.1">
       
     <name>mMedia Ad</name>
 	<description>Cordova/PhoneGap plugin for mMedia, support Banner, Interstitial and Video Ad.</description>
