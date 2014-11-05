@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.rjfun.cordova.mmedia"
-	version="1.0.1">
+	version="1.1.0">
       
     <name>mMedia Ad</name>
 	<description>Cordova/PhoneGap plugin for mMedia, support Banner, Interstitial and Video Ad.</description>
@@ -21,33 +21,16 @@
         <clobbers target="window.mMedia" />
     </js-module>
 
+    <dependency id="com.mmedia.sdk" version=">=5.4.1"/>
+
     <!-- android -->
     <platform name="android">
-    	<dependency id="com.google.playservices" version=">=19.0.0"/>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="mMedia">
                 <param name="android-package" value="com.rjfun.cordova.mmedia.mMedia"/>
             </feature>
         </config-file>
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-			<activity android:name="com.millennialmedia.android.MMActivity"
-			    android:theme="@android:style/Theme.Translucent.NoTitleBar" 
-			    android:configChanges="keyboardHidden|orientation|keyboard" ></activity>
-          </config-file>
-        <config-file target="AndroidManifest.xml" parent="/*">
-			<uses-permission android:name="android.permission.RECORD_AUDIO" />
-			<uses-permission android:name="android.permission.INTERNET" />
-			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-			<uses-feature android:name="android.hardware.microphone" android:required="false" />
-          </config-file>
-          
         <source-file src="src/android/cordova-mmedia.jar" target-dir="libs" />
-		
-        <source-file src="src/android/MMSDK.jar" target-dir="libs" />
-        <source-file src="src/android/nmdp_speech_kit.jar" target-dir="libs" />
-        <source-file src="src/android/armeabi/libnmsp_speex.so" target-dir="libs/armeabi" />
-		
      </platform>
      
      <!-- ios -->
@@ -61,27 +44,6 @@
          <source-file src="src/ios/CDVMMedia.m" />
          <header-file src="src/ios/MMediaAds.h" />
          <source-file src="src/ios/libmMediaAds.a" framework="true" />
-         
-         <framework src="src/ios/MillennialMedia.framework" custom="true"/>
-         <framework src="src/ios/SpeechKit.framework" custom="true"/>
-		
-        <framework src="AdSupport.framework"/>
-        <framework src="AudioToolbox.framework"/>
-        <framework src="AVFoundation.framework"/>
-        <framework src="CFNetwork.framework"/>
-        <framework src="CoreGraphics.framework"/>
-        <framework src="CoreLocation.framework"/>
-        <framework src="EventKit.framework"/>
-        <framework src="Foundation.framework"/>
-        <framework src="MediaPlayer.framework"/>
-        <framework src="MobileCoreServices.framework"/>
-        <framework src="PassKit.framework"/>
-        <framework src="QuartzCore.framework"/>
-        <framework src="Security.framework"/>
-        <framework src="Social.framework"/>
-        <framework src="StoreKit.framework"/>
-        <framework src="SystemConfiguration.framework"/>
-        <framework src="UIKit.framework"/>
 	</platform>
 
 </plugin>
