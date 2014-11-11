@@ -3,13 +3,13 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.rjfun.cordova.mmedia"
-	version="1.1.0">
+	version="2.0.0">
       
     <name>mMedia Ad</name>
 	<description>Cordova/PhoneGap plugin for mMedia, support Banner, Interstitial and Video Ad.</description>
 	<author>Liming Xie</author>
 	<license>MIT</license>
-	<keywords>ad,admob,google,play,services,iad,mmedia</keywords>
+	<keywords>ad,millennial,mmedia</keywords>
     <repo>https://github.com/floatinghotpot/cordova-mmedia.git</repo>
     <issue>https://github.com/floatinghotpot/cordova-mmedia/issues</issue>
 
@@ -21,13 +21,14 @@
         <clobbers target="window.mMedia" />
     </js-module>
 
+	<dependency id="com.rjfun.cordova.ad" version=">=1.0.0"/>
     <dependency id="com.mmedia.sdk" version=">=5.4.1"/>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="mMedia">
-                <param name="android-package" value="com.rjfun.cordova.mmedia.mMedia"/>
+                <param name="android-package" value="com.rjfun.cordova.mmedia.mMediaAdPlugin"/>
             </feature>
         </config-file>
         <source-file src="src/android/cordova-mmedia.jar" target-dir="libs" />
@@ -37,13 +38,10 @@
      <platform name="ios">
          <config-file target="config.xml" parent="/*">
              <feature name="mMedia">
-                 <param name="ios-package" value="CDVMMedia" />
+                 <param name="ios-package" value="mMediaAdPlugin" />
              </feature>
          </config-file>
-         <header-file src="src/ios/CDVMMedia.h" />
-         <source-file src="src/ios/CDVMMedia.m" />
-         <header-file src="src/ios/MMediaAds.h" />
-         <source-file src="src/ios/libmMediaAds.a" framework="true" />
+         <source-file src="src/ios/libCordovaMMedia.a" framework="true" compiler-flags="-force_load"/>
 	</platform>
 
 </plugin>
