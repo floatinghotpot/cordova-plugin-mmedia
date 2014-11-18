@@ -3,26 +3,26 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.rjfun.cordova.mmedia"
-	version="2.0.0">
+	version="2.0.1">
       
-    <name>mMedia Ad</name>
+    <name>Millennial Media Ad</name>
 	<description>Cordova/PhoneGap plugin for mMedia, support Banner, Interstitial and Video Ad.</description>
 	<author>Liming Xie</author>
 	<license>MIT</license>
-	<keywords>ad,millennial,mmedia</keywords>
+	<keywords>ad,millennial,mmedia,rjfun</keywords>
     <repo>https://github.com/floatinghotpot/cordova-mmedia.git</repo>
     <issue>https://github.com/floatinghotpot/cordova-mmedia/issues</issue>
 
 	<engines>
-	    <engine name="cordova" version=">=3.5" />
+	    <engine name="cordova" version=">=3.0" />
 	</engines>
 
     <js-module src="www/mMedia.js" name="mMedia">
         <clobbers target="window.mMedia" />
     </js-module>
 
-	<dependency id="com.rjfun.cordova.ad" version=">=1.0.0"/>
-    <dependency id="com.mmedia.sdk" version=">=5.4.1"/>
+	<dependency id="com.rjfun.cordova.ad"/>
+    <dependency id="com.mmedia.sdk"/>
 
     <!-- android -->
     <platform name="android">
