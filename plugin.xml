@@ -21,7 +21,7 @@
         <clobbers target="window.mMedia" />
     </js-module>
 
-	<dependency id="com.rjfun.cordova.ad"/>
+	<dependency id="com.rjfun.cordova.extension"/>
     <dependency id="com.mmedia.sdk"/>
 
     <!-- android -->
