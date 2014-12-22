@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.rjfun.cordova.mmedia"
-	version="2.0.2">
+	version="2.1.0">
       
     <name>Millennial Media Ad</name>
 	<description>Cordova/PhoneGap plugin for mMedia, support Banner, Interstitial and Video Ad.</description>
@@ -32,6 +32,25 @@
             </feature>
         </config-file>
         <source-file src="src/android/mMediaAdPlugin.java" target-dir="src/com/rjfun/cordova/mmedia" />
+        
+        <dependency id="com.google.playservices" url="https://github.com/floatinghotpot/google-play-services" commit="r19" />
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<activity android:name="com.millennialmedia.android.MMActivity"
+			    android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+			    android:configChanges="keyboardHidden|orientation|keyboard" ></activity>
+          </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.RECORD_AUDIO" />
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+			<uses-feature android:name="android.hardware.microphone" android:required="false" />
+          </config-file>
+          
+        <source-file src="src/android/MMSDK.jar" target-dir="libs" />
+        <source-file src="src/android/nmdp_speech_kit.jar" target-dir="libs" />
+        <source-file src="src/android/armeabi/libnmsp_speex.so" target-dir="libs/armeabi" />
      </platform>
      
      <!-- ios -->
@@ -43,6 +62,27 @@
          </config-file>
          <header-file src="src/ios/mMediaAdPlugin.h"/>
          <source-file src="src/ios/mMediaAdPlugin.m"/>
+         
+         <framework src="src/ios/MillennialMedia.framework" custom="true"/>
+         <framework src="src/ios/SpeechKit.framework" custom="true"/>
+		
+        <framework src="AdSupport.framework"/>
+        <framework src="AudioToolbox.framework"/>
+        <framework src="AVFoundation.framework"/>
+        <framework src="CFNetwork.framework"/>
+        <framework src="CoreGraphics.framework"/>
+        <framework src="CoreLocation.framework"/>
+        <framework src="EventKit.framework"/>
+        <framework src="Foundation.framework"/>
+        <framework src="MediaPlayer.framework"/>
+        <framework src="MobileCoreServices.framework"/>
+        <framework src="PassKit.framework"/>
+        <framework src="QuartzCore.framework"/>
+        <framework src="Security.framework"/>
+        <framework src="Social.framework"/>
+        <framework src="StoreKit.framework"/>
+        <framework src="SystemConfiguration.framework"/>
+        <framework src="UIKit.framework"/>
 	</platform>
 
 </plugin>
