@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.rjfun.cordova.mmedia"
-	version="2.1.0">
+	version="2.1.1">
       
     <name>Millennial Media Ad</name>
 	<description>Cordova/PhoneGap plugin for mMedia, support Banner, Interstitial and Video Ad.</description>
@@ -22,7 +22,6 @@
     </js-module>
 
 	<dependency id="com.rjfun.cordova.extension"/>
-    <dependency id="com.mmedia.sdk"/>
 
     <!-- android -->
     <platform name="android">
