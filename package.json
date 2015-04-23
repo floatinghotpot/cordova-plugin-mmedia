@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-mmedia",
+  "version": "2.1.1",
+  "description": "Cordova plugin for MillennialMedia Ads, support Banner, Interstitial and Video Ad",
+  "cordova": {
+    "id": "cordova-plugin-mmedia",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/floatinghotpot/cordova-plugin-mmedia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/cordova-plugin-mmedia/issues"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "ad",
+    "mmedia",
+    "millennial",
+    "rjfun"
+  ],
+  "author": {
+    "name": "Raymond Xie",
+    "email": "rjfun.mobile@gmail.com"
+  },
+  "license": "MIT"
+}

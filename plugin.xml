@@ -2,16 +2,16 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="com.rjfun.cordova.mmedia"
+	id="cordova-plugin-mmedia"
 	version="2.1.1">
       
-    <name>Millennial Media Ad</name>
-	<description>Cordova/PhoneGap plugin for mMedia, support Banner, Interstitial and Video Ad.</description>
+    <name>MillennialMedia Ad</name>
+	<description>Cordova plugin for MillennialMedia Ads, support Banner, Interstitial and Video Ad</description>
 	<author>Liming Xie</author>
 	<license>MIT</license>
 	<keywords>ad,millennial,mmedia,rjfun</keywords>
-    <repo>https://github.com/floatinghotpot/cordova-mmedia.git</repo>
-    <issue>https://github.com/floatinghotpot/cordova-mmedia/issues</issue>
+    <repo>https://github.com/floatinghotpot/cordova-plugin-mmedia.git</repo>
+    <issue>https://github.com/floatinghotpot/cordova-plugin-mmedia/issues</issue>
 
 	<engines>
 	    <engine name="cordova" version=">=3.0" />
@@ -21,10 +21,12 @@
         <clobbers target="window.mMedia" />
     </js-module>
 
-	<dependency id="com.rjfun.cordova.extension"/>
+	<dependency id="cordova-plugin-extension"/>
 
     <!-- android -->
     <platform name="android">
+        <dependency id="cordova-plugin-googleplayservices"/>
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="mMedia">
                 <param name="android-package" value="com.rjfun.cordova.mmedia.mMediaAdPlugin"/>
@@ -32,8 +34,6 @@
         </config-file>
         <source-file src="src/android/mMediaAdPlugin.java" target-dir="src/com/rjfun/cordova/mmedia" />
         
-        <dependency id="com.google.playservices" url="https://github.com/floatinghotpot/google-play-services" commit="r19" />
-
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:name="com.millennialmedia.android.MMActivity"
 			    android:theme="@android:style/Theme.Translucent.NoTitleBar" 
