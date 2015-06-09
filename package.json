@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-mmedia",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Cordova plugin for MillennialMedia Ads, support Banner, Interstitial and Video Ad",
   "cordova": {
     "id": "cordova-plugin-mmedia",

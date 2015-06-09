@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="cordova-plugin-mmedia"
-	version="2.1.1">
+	version="2.2.0">
       
     <name>MillennialMedia Ad</name>
 	<description>Cordova plugin for MillennialMedia Ads, support Banner, Interstitial and Video Ad</description>
@@ -25,8 +25,6 @@
 
     <!-- android -->
     <platform name="android">
-        <dependency id="cordova-plugin-googleplayservices"/>
-
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="mMedia">
                 <param name="android-package" value="com.rjfun.cordova.mmedia.mMediaAdPlugin"/>
@@ -50,6 +48,8 @@
         <source-file src="src/android/MMSDK.jar" target-dir="libs" />
         <source-file src="src/android/nmdp_speech_kit.jar" target-dir="libs" />
         <source-file src="src/android/armeabi/libnmsp_speex.so" target-dir="libs/armeabi" />
+
+        <framework src="com.google.android.gms:play-services-ads:+" />
      </platform>
      
      <!-- ios -->
